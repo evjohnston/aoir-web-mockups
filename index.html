@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AoIR Web Mockups</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=JetBrains+Mono:wght@400;800&display=swap" rel="stylesheet">
+<style>
+  :root { --ink:#141414; --paper:#fffdf3; --hl:#fff04d; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:#ececec; color:var(--ink); font:17px/1.55 Inter, system-ui, sans-serif; }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 48px 20px 64px; }
+  h1 { font: 800 clamp(30px,5vw,48px)/1.1 "JetBrains Mono", monospace; margin: 0 0 10px; }
+  .lede { max-width: 42em; margin: 0 0 36px; }
+  .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); gap: 28px; }
+  .card { border:2px solid var(--ink); box-shadow:6px 6px 0 var(--ink); background:var(--paper); display:flex; flex-direction:column; }
+  .card .swatch { height: 150px; border-bottom:2px solid var(--ink); display:grid; place-items:center; }
+  .card .swatch span { background:var(--paper); border:2px solid var(--ink); box-shadow:4px 4px 0 var(--ink); padding:8px 14px; font:800 18px "JetBrains Mono", monospace; }
+  .card .body { padding: 20px 22px 22px; flex:1; display:flex; flex-direction:column; }
+  .card h2 { font: 800 22px/1.2 "JetBrains Mono", monospace; margin:0 0 8px; }
+  .card p { margin:0 0 12px; font-size:15px; }
+  .card ul { margin:0 0 16px; padding-left: 1.1em; font-size:15px; }
+  .btn { display:inline-block; margin-top:auto; align-self:flex-start; background:var(--ink); color:var(--paper); font:800 14px "JetBrains Mono", monospace; padding:12px 16px; text-decoration:none; border:2px solid var(--ink); }
+  .btn:hover { background:var(--hl); color:var(--ink); }
+  .pages { font: 13px/1.8 "JetBrains Mono", monospace; margin: 0 0 16px; }
+  .pages a { color: var(--ink); margin-right: 8px; }
+  .notes { margin-top: 44px; font-size: 15px; max-width: 46em; }
+  .notes h3 { font: 800 16px "JetBrains Mono", monospace; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>AoIR web mockups</h1>
+  <p class="lede">Two full-site directions, each nine pages, built from the feedback on the November 2026 round: windowed elements floating on a solid color, with the color pulled into the background instead of filling every block.</p>
+
+  <div class="grid">
+    <article class="card">
+      <div class="swatch" style="background:#2f46e6"><span>Windowed</span></div>
+      <div class="body">
+        <h2>A · Windowed</h2>
+        <p>The "Join the people who study the internet" direction. Cream windows, mono headlines and yellow highlighter, floating on a solid backdrop.</p>
+        <ul>
+          <li>Each window's title bar carries one small accent color, borrowed from the neon e-zine but used sparingly on white</li>
+          <li>Backdrop picker in the footer: cobalt, tomato, mint, lilac, pink, ink, original cream</li>
+        </ul>
+        <p class="pages"><a href="windowed/index.html">home</a><a href="windowed/membership.html">membership</a><a href="windowed/conference.html">conference</a><a href="windowed/about.html">about</a><a href="windowed/news.html">news</a><a href="windowed/publications.html">publications</a><a href="windowed/awards.html">awards</a><a href="windowed/ethics.html">ethics</a><a href="windowed/login.html">login</a></p>
+        <a class="btn" href="windowed/index.html">Open Windowed →</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="swatch" style="background:#f2753a"><span>Classic</span></div>
+      <div class="body">
+        <h2>B · Classic</h2>
+        <p>The Mac Classic / OS 9 direction. Strict 1-bit black-and-white windows, pixel type, and desktop icons on a solid color desktop.</p>
+        <ul>
+          <li>Windows can be dragged by their title bars and collapsed (windowshade) with the box at the right</li>
+          <li>Desktop color picker in the bottom strip: tangerine, Bondi, periwinkle, sage, grape, lime, platinum</li>
+        </ul>
+        <p class="pages"><a href="classic/index.html">home</a><a href="classic/membership.html">membership</a><a href="classic/conference.html">conference</a><a href="classic/about.html">about</a><a href="classic/news.html">news</a><a href="classic/publications.html">publications</a><a href="classic/awards.html">awards</a><a href="classic/ethics.html">ethics</a><a href="classic/login.html">login</a></p>
+        <a class="btn" href="classic/index.html">Open Classic →</a>
+      </div>
+    </article>
+  </div>
+
+  <div class="notes">
+    <h3>Notes</h3>
+    <p>To share a specific color, add <code>?bg=</code> with a hex code to any page URL, e.g. <code>windowed/index.html?bg=ff5a36</code> or <code>classic/index.html?bg=0d97b0</code>. The picker remembers your last choice in your own browser only.</p>
+    <p>Content is drawn from the current aoir.org. Links inside the mockups go to other mockup pages or to <code>#</code>. Forms don't submit. The logo is a stand-in drawn in SVG; swap in the real file before anything ships.</p>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Membership — AoIR</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=JetBrains+Mono:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="membership">
+<div class="desk">
+  <header id="chrome-top"></header>
+
+  <main class="win span-8" id="main">
+    <div class="win-bar c-yellow"><span class="file">join.html</span><span class="ctl"><i></i><i></i></span></div>
+    <div class="win-body">
+      <span class="tag">/membership</span>
+      <h1>Join the people who study the <mark>internet</mark>.</h1>
+      <p style="font-size:19px;max-width:40em">Since 1998, AoIR has brought together internet researchers from cultural studies through the social sciences to informatics, and beyond. Membership gives you a voice in the association and helps fund students and early-career scholars.</p>
+      <div class="btn-row">
+        <a class="btn" href="#dues">Choose a membership</a>
+        <a class="btn ghost" href="login.html">I'm already a member</a>
+      </div>
+    </div>
+  </main>
+
+  <aside class="win span-4 nudge-down tilt-r" aria-labelledby="login-h">
+    <div class="win-bar c-ink"><span class="file">login — members</span><span class="ctl"><i></i><i></i></span></div>
+    <div class="win-body">
+      <h3 id="login-h">Member log in</h3>
+      <form onsubmit="return false">
+        <label for="em">email</label>
+        <input id="em" type="email" autocomplete="email">
+        <label for="pw">password</label>
+        <input id="pw" type="password" autocomplete="current-password">
+        <div class="btn-row" style="margin-top:14px"><button class="btn" style="width:100%">Log in</button></div>
+      </form>
+      <p class="small" style="margin-top:12px"><a href="login.html">Forgot your password?</a> · <a href="login.html">Renew</a></p>
+    </div>
+  </aside>
+
+  <section class="win span-12" aria-labelledby="get-h">
+    <div class="win-bar c-green"><span class="file">what-members-get.txt</span><span class="ctl"><i></i><i></i></span></div>
+    <div class="win-body">
+      <h2 id="get-h">What members get</h2>
+      <div class="benefits">
+        <div><b>Conference discount</b>A lower registration rate for the annual meeting.</div>
+        <div><b>The paper archive</b>Access to past conference papers (SPIR).</div>
+        <div><b>Talks and workshops</b>Members-only virtual talks, including the Legacy Lecture Series.</div>
+        <div><b>aoir.social</b>A free account on the association's Mastodon server.</div>
+        <div><b>Publisher discounts</b>Reduced prices on books and journals from partner presses.</div>
+        <div><b>A vote</b>A say in the association's elections, officers and future.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="win span-12" id="dues" aria-labelledby="dues-h">
+    <div class="win-bar"><span class="file">dues.csv — annual, in US dollars</span><span class="ctl"><i></i><i></i></span></div>
+    <div class="win-body">
+      <h2 id="dues-h">Annual dues, in US dollars</h2>
+      <div class="dues">
+        <div class="due"><i class="chip" style="background:var(--cyan)"></i><div class="lbl">Standard</div><div class="amt">$65</div><p>Individual member</p></div>
+        <div class="due"><i class="chip" style="background:var(--pink)"></i><div class="lbl">Student</div><div class="amt">$45</div><p>Including PhD students</p></div>
+        <div class="due"><i class="chip" style="background:var(--green)"></i><div class="lbl">Non-OECD</div><div class="amt">$15</div><p>Individuals in non-OECD countries</p></div>
+        <div class="due"><i class="chip" style="background:var(--lilac)"></i><div class="lbl">Lifetime</div><div class="amt">$1,500</div><p>Protected from future dues increases</p></div>
+      </div>
+      <div class="btn-row"><a class="btn" href="#">Join AoIR</a><span class="note" style="align-self:center">Annual memberships renew 12 months from the date you join.</span></div>
+    </div>
+  </section>
+
+  <section class="win span-7" aria-labelledby="inst-h">
+    <div class="win-bar c-lilac"><span class="file">institutional.html</span><span class="ctl"><i></i><i></i></span></div>
+    <div class="win-body">
+      <h2 id="inst-h">Institutional membership</h2>
+      <p class="small">For departments, faculties and institutes with several current or potential members. Save up to 25%.</p>
+      <ul class="rule-list">
+        <li><span><b>Tier 1</b> · 5 regular + 10 student members</span><span class="mono"><b>$600</b></span></li>
+        <li><span><b>Tier 2</b> · 10 regular + 20 student members</span><span class="mono"><b>$1,100</b></span></li>
+      </ul>
+      <p class="small" style="margin-top:14px">Need a bespoke package? <a href="about.html#staff">Contact the AoIR office</a>.</p>
+    </div>
+  </section>
+
+  <section class="win span-5 nudge-down" aria-labelledby="where-h">
+    <div class="win-bar c-orange"><span class="file">where-do-dues-go.md</span><span class="ctl"><i></i><i></i></span></div>
+    <div class="win-body">
+      <h3 id="where-h">Where do your dues go?</h3>
+      <p class="small">Two professional staff, conference travel support for graduate students, the AIR-L list and aoir.social, and a growing programme of members-only talks and workshops.</p>
+      <p class="small">On AIR-L but never joined? This is the nudge.</p>
+    </div>
+  </section>
+
+  <footer id="chrome-bottom"></footer>
+</div>
+<script src="site.js"></script>
+</body>
+</html>

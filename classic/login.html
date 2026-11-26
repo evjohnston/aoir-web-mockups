@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Log In — AoIR</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="login">
+<header id="menubar"></header>
+<div class="desktop">
+  <main class="stage" id="main">
+
+    <section class="window alert span-6" style="grid-column: 3 / span 6; margin-top: 60px" aria-labelledby="w1">
+      <div class="titlebar"><button class="close" aria-label="Collapse window"></button><span class="t" id="w1">Connect to AoIR</span><button class="shade" aria-label="Windowshade"></button></div>
+      <div class="wbody">
+        <svg viewBox="0 0 16 16" shape-rendering="crispEdges" aria-hidden="true"><rect x="3.5" y="7.5" width="9" height="7" fill="#fff" stroke="#000"/><path d="M5.5 7.5 V5 a2.5 2.5 0 0 1 5 0 V7.5" fill="none" stroke="#000" stroke-width="1.5"/><rect x="7" y="10" width="2" height="3"/></svg>
+        <form onsubmit="return false">
+          <p>Connect as a registered member:</p>
+          <label class="field">Email<input type="email" autocomplete="email"></label>
+          <label class="field">Password<input type="password" autocomplete="current-password"></label>
+          <p class="small"><a href="#">Forgot password?</a> · Not a member? <a href="membership.html">Join from $15</a></p>
+          <div class="btn-row" style="justify-content:flex-end">
+            <a class="btn" href="index.html">Cancel</a>
+            <button class="btn default" type="submit">Connect</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer id="strip"></footer>
+  </main>
+  <nav id="icons"></nav>
+</div>
+<script src="site.js"></script>
+</body>
+</html>
