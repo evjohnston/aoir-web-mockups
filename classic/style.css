@@ -206,3 +206,5 @@ p { margin: 0 0 .9em; }
 .picker { display: flex; align-items: center; gap: 6px; }
 .picker button { width: 20px; height: 20px; border: 2px solid var(--black); padding: 0; cursor: pointer; }
 .picker button[aria-pressed="true"] { outline: 2px solid var(--black); outline-offset: 2px; }
+
+h2.sm { font-size: 18px; }

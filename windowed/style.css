@@ -184,7 +184,7 @@ input:focus, select:focus, textarea:focus, .btn:focus-visible, a:focus-visible {
 
 /* ---------- 88x31 buttons ---------- */
 .buttons88 { display: flex; flex-wrap: wrap; gap: 8px; }
-.b88 { width: 88px; height: 31px; border: 2px solid var(--ink); font: 700 9px/1.05 var(--mono); display: flex; align-items: center; justify-content: center; text-align: center; text-transform: uppercase; }
+.b88 { min-width: 88px; height: 34px; padding: 0 6px; border: 2px solid var(--ink); font: 700 11px/1.05 var(--mono); display: flex; align-items: center; justify-content: center; text-align: center; text-transform: uppercase; }
 
 /* ---------- backdrop picker ---------- */
 .picker { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font: 13px var(--mono); }
@@ -215,3 +215,5 @@ input:focus, select:focus, textarea:focus, .btn:focus-visible, a:focus-visible {
 .timeline li { display: grid; grid-template-columns: 52px 1fr; gap: 12px; padding: 5px 0; border-bottom: 1px dashed #bbb; }
 .timeline li b { font-weight: 800; }
 .note { font: 13px/1.4 var(--mono); color: var(--muted); }
+
+h2.sm { font-size: 18px; }
