@@ -2,7 +2,7 @@
    E-zine color blocks on a solid page color (black by default, white option). */
 
 :root {
-  --page: #000;             /* gutters/page — swapped by the picker */
+  --page: #fff;             /* gutters/page — swapped by the picker */
   --ink: #000;
   --white: #fff;
   --pink: #ff2fa8;

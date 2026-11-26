@@ -4,7 +4,7 @@ Static HTML mockups for a redesigned aoir.org. No build step: open any `.html` f
 
 - `windowed/`: 1. Modern-retro cream windows floating on a solid backdrop.
 - `flat/`: 2. The original modern-retro page: one cream column, no windows.
-- `neon/`: 3. E-zine neon color blocks on black (white option).
+- `neon/`: 3. E-zine neon color blocks on white (black option).
 - `classic/`: also explored. 1-bit Mac Classic / OS 9 windows on a solid color desktop.
 - `index.html`: landing page linking all of them.
 
