@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Log in — AoIR</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=JetBrains+Mono:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="login">
+<div class="desk">
+  <header id="chrome-top"></header>
+
+  <main class="win span-5" id="main" style="grid-column: 2 / span 5">
+    <div class="win-bar c-ink"><span class="file">&lt;h1&gt;</span><span class="ctl"><i></i><i></i></span></div>
+    <div class="win-body">
+      <h2>Member log in</h2>
+      <form onsubmit="return false">
+        <label for="em">email</label>
+        <input id="em" type="email" autocomplete="email">
+        <label for="pw">password</label>
+        <input id="pw" type="password" autocomplete="current-password">
+        <div class="btn-row" style="margin-top:16px"><button class="btn">Log in</button><a class="btn ghost" href="#">Forgot password</a></div>
+      </form>
+    </div>
+  </main>
+
+  <aside class="win span-5 nudge-down tilt-r sticky-note" aria-labelledby="in-h">
+    <div class="win-bar"><span class="file">&lt;aside id="once-youre-in"&gt;</span><span class="ctl"><i></i><i></i></span></div>
+    <div class="win-body">
+      <h2 class="sm" id="in-h">Once you're in</h2>
+      <ul class="dash small">
+        <li>Renew or upgrade your membership</li>
+        <li>Download receipts</li>
+        <li>Watch Legacy Lecture recordings</li>
+        <li>Search the full paper archive</li>
+        <li>Vote in elections</li>
+      </ul>
+      <p class="small">Not a member yet? <a href="membership.html">Join from $15 →</a></p>
+    </div>
+  </aside>
+
+  <footer id="chrome-bottom"></footer>
+</div>
+<script src="site.js"></script>
+</body>
+</html>

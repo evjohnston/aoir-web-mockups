@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Log in — AoIR</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="login">
+<div class="zine">
+  <header id="chrome-top"></header>
+  <main style="display:contents" id="main">
+
+    <section class="blk c-white s-6">
+      <span class="kicker">&gt;&gt; Members</span>
+      <h2>Log in</h2>
+      <form onsubmit="return false">
+        <label for="em">Email</label><input id="em" type="email" autocomplete="email">
+        <label for="pw">Password</label><input id="pw" type="password" autocomplete="current-password">
+        <div class="btn-row"><button class="btn" type="submit">Log in →</button><a class="btn alt" href="#">Forgot password</a></div>
+      </form>
+    </section>
+    <section class="blk c-yellow s-6">
+      <h2 class="sm">Once you're in</h2>
+      <ul class="rows">
+        <li>Renew or upgrade your membership</li>
+        <li>Download receipts</li>
+        <li>Watch Legacy Lecture recordings</li>
+        <li>Search the paper archive</li>
+        <li>Vote in elections</li>
+      </ul>
+      <div class="btn-row"><a class="btn" href="membership.html">Not a member? Join from $15 →</a></div>
+    </section>
+  </main>
+  <footer id="chrome-bottom"></footer>
+</div>
+<script src="site.js"></script>
+</body>
+</html>

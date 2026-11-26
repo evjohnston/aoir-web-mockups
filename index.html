@@ -33,13 +33,13 @@
 <body>
 <div class="wrap">
   <h1>AoIR web mockups</h1>
-  <p class="lede">Two full-site directions, each nine pages, built from the feedback on the November 2026 round: windowed elements floating on a solid color, with the color pulled into the background instead of filling every block.</p>
+  <p class="lede">Three full-site versions, nine pages each, with the same content so they compare page for page.</p>
 
   <div class="grid">
     <article class="card">
       <div class="swatch" style="background:#2f46e6"><span>Windowed</span></div>
       <div class="body">
-        <h2>A · Windowed</h2>
+        <h2>1 · Windowed</h2>
         <p>The "Join the people who study the internet" direction. Cream windows, mono headlines and yellow highlighter, floating on a solid backdrop.</p>
         <ul>
           <li>Each window's title bar carries one small accent color, borrowed from the neon e-zine but used sparingly on white</li>
@@ -51,23 +51,43 @@
     </article>
 
     <article class="card">
-      <div class="swatch" style="background:#f2753a"><span>Classic</span></div>
+      <div class="swatch" style="background:#fffdf3"><span>Flat</span></div>
       <div class="body">
-        <h2>B · Classic</h2>
-        <p>The Mac Classic / OS 9 direction. Strict 1-bit black-and-white windows, pixel type, and desktop icons on a solid color desktop.</p>
+        <h2>2 · Flat</h2>
+        <p>The original modern-retro page: one cream column, mono headlines, yellow highlighter, and <code>&lt;section&gt;</code> tag labels instead of windows.</p>
         <ul>
-          <li>Windows can be dragged by their title bars and collapsed (windowshade) with the box at the right</li>
-          <li>Desktop color picker in the bottom strip: tangerine, Bondi, periwinkle, sage, grape, lime, platinum</li>
+          <li>Same pages and copy as Windowed, so you can flip between the two</li>
+          <li>Hand-coded small-web footer, no color picker</li>
         </ul>
-        <p class="pages"><a href="classic/index.html">home</a><a href="classic/membership.html">membership</a><a href="classic/conference.html">conference</a><a href="classic/about.html">about</a><a href="classic/news.html">news</a><a href="classic/publications.html">publications</a><a href="classic/awards.html">awards</a><a href="classic/ethics.html">ethics</a><a href="classic/login.html">login</a></p>
-        <a class="btn" href="classic/index.html">Open Classic →</a>
+        <p class="pages"><a href="flat/index.html">home</a><a href="flat/membership.html">membership</a><a href="flat/conference.html">conference</a><a href="flat/about.html">about</a><a href="flat/news.html">news</a><a href="flat/publications.html">publications</a><a href="flat/awards.html">awards</a><a href="flat/ethics.html">ethics</a><a href="flat/login.html">login</a></p>
+        <a class="btn" href="flat/index.html">Open Flat →</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="swatch" style="background:#000"><span style="background:#6dff7a">Neon</span></div>
+      <div class="body">
+        <h2>3 · Neon</h2>
+        <p>The e-zine direction: a masthead, solid neon color blocks, and heavy all-caps headlines.</p>
+        <ul>
+          <li>"Back issues" index of news, big-number membership pitch</li>
+          <li>Page color picker in the footer: black (default), white, ink blue</li>
+        </ul>
+        <p class="pages"><a href="neon/index.html">home</a><a href="neon/membership.html">membership</a><a href="neon/conference.html">conference</a><a href="neon/about.html">about</a><a href="neon/news.html">news</a><a href="neon/publications.html">publications</a><a href="neon/awards.html">awards</a><a href="neon/ethics.html">ethics</a><a href="neon/login.html">login</a></p>
+        <a class="btn" href="neon/index.html">Open Neon →</a>
       </div>
     </article>
   </div>
 
+
+  <div class="notes">
+    <h3>Also explored</h3>
+    <p><a href="classic/index.html">Classic</a>: the Mac Classic / OS 9 direction, with 1-bit windows on a solid color desktop. Same nine pages.</p>
+  </div>
+
   <div class="notes">
     <h3>Notes</h3>
-    <p>To share a specific color, add <code>?bg=</code> with a hex code to any page URL, e.g. <code>windowed/index.html?bg=ff5a36</code> or <code>classic/index.html?bg=0d97b0</code>. The picker remembers your last choice in your own browser only.</p>
+    <p>To share a specific color, add <code>?bg=</code> with a hex code to any page URL, e.g. <code>windowed/index.html?bg=ff5a36</code> or <code>neon/index.html?bg=ffffff</code>. The picker remembers your last choice in your own browser only.</p>
     <p>Content is drawn from the current aoir.org. Links inside the mockups go to other mockup pages or to <code>#</code>. Forms don't submit. The logo is a stand-in drawn in SVG; swap in the real file before anything ships.</p>
   </div>
 </div>
