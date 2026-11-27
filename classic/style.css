@@ -212,7 +212,7 @@ h2.sm { font-size: 18px; }
 /* committee portraits: Finder icon view */
 .people { display: grid; grid-template-columns: repeat(auto-fill, minmax(128px, 1fr)); gap: 18px 14px; }
 .person-card { margin: 0; text-align: center; }
-.person-card img { width: 112px; height: 112px; display: block; margin: 0 auto; border: 2px solid var(--black); box-shadow: 2px 2px 0 var(--black); filter: grayscale(1) contrast(1.05); }
+.person-card img { width: 112px; height: 112px; display: block; margin: 0 auto; border: 2px solid var(--black); box-shadow: 2px 2px 0 var(--black); }
 .person-card figcaption { margin-top: 8px; }
 .person-card .who { display: inline-block; font-size: 13px; padding: 0 4px; }
 .person-card:hover .who { background: var(--black); color: var(--white); }

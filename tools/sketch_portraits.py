@@ -1,4 +1,4 @@
-"""Turn AoIR-published committee headshots into pencil-sketch portraits.
+"""Crop AoIR-published committee headshots into square portrait photos.
 Input:  _photos/<slug>.img   (not committed; downloaded from aoir.org)
 Output: assets/committee/<slug>.jpg  and  assets/committee/initials-<slug>.jpg for people without a photo.
 Run from the repo root:  python3 tools/sketch_portraits.py
@@ -92,13 +92,13 @@ def sketch_filter_old(slug):
 
 
 def sketch(slug):
-    """Pen-and-ink drawing of the published headshot (see tools/engrave.py)."""
-    from engrave import pen
+    """Plain square-cropped photo of the published headshot."""
     im = Image.open(os.path.join(SRC, slug + ".img"))
+    im = ImageOps.exif_transpose(im)
     if im.mode in ("RGBA", "LA", "P"):
         im = im.convert("RGBA"); bg = Image.new("RGB", im.size, "white"); bg.paste(im, mask=im.split()[-1]); im = bg
-    im = crop_square(im.convert("RGB"), slug).convert("L")
-    pen(im, size=SIZE).save(os.path.join(OUT, slug + ".jpg"), quality=88)
+    im = crop_square(im.convert("RGB"), slug).resize((SIZE, SIZE), Image.LANCZOS)
+    im.save(os.path.join(OUT, slug + ".jpg"), quality=86)
 
 
 def initials_card(slug, name):
