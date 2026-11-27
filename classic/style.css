@@ -217,3 +217,8 @@ h2.sm { font-size: 18px; }
 .person-card .who { display: inline-block; font-size: 13px; padding: 0 4px; }
 .person-card:hover .who { background: var(--black); color: var(--white); }
 .person-card .role { display: block; font-size: 11px; color: #333; }
+
+/* portraits: black and white, colour on hover */
+.person-card img { filter: grayscale(1); transition: filter .25s ease; }
+.person-card:hover img, .person-card:focus-within img { filter: none; }
+@media (prefers-reduced-motion: reduce) { .person-card img { transition: none; } }

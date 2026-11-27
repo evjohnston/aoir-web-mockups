@@ -138,3 +138,8 @@ body.on-white .picker button[aria-pressed="true"] { outline-color: var(--blue); 
 .person-card figcaption { padding: 8px 10px 10px; line-height: 1.25; }
 .person-card .role { display: block; font: 700 11px var(--mono); text-transform: uppercase; letter-spacing: .06em; }
 .person-card .who { display: block; font: 400 15px/1.15 var(--head); text-transform: uppercase; margin-top: 3px; }
+
+/* portraits: black and white, colour on hover */
+.person-card img { filter: grayscale(1); transition: filter .25s ease; }
+.person-card:hover img, .person-card:focus-within img { filter: none; }
+@media (prefers-reduced-motion: reduce) { .person-card img { transition: none; } }
