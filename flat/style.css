@@ -212,7 +212,7 @@ input:focus, select:focus, textarea:focus, .btn:focus-visible, a:focus-visible {
 .person .role { font: 12px var(--mono); text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
 .person .name { font-weight: 700; }
 .timeline { list-style: none; margin: 0; padding: 0; font: 14px/1.5 var(--mono); }
-.timeline li { display: grid; grid-template-columns: 52px 1fr; gap: 12px; padding: 5px 0; border-bottom: 1px dashed #bbb; }
+.timeline li { display: grid; grid-template-columns: 96px 1fr; gap: 12px; padding: 5px 0; border-bottom: 1px dashed #bbb; }
 .timeline li b { font-weight: 800; }
 .note { font: 13px/1.4 var(--mono); color: var(--muted); }
 
