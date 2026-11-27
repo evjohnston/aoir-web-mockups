@@ -60,8 +60,8 @@ def page_neon():
             '      <h1 style="font-size:clamp(40px,7vw,96px)">Past executive<br>committees</h1>\n'
             f'      <p style="font-size:16px;max-width:44em">{e(INTRO)}</p>\n      <p class="meta-line" style="font-size:13px">{jump()}</p>\n    </section>\n')
     for i, (y, cur, members) in enumerate(TERMS):
-        out += (f'    <section class="blk {colors[i % len(colors)]}" id="{tid(y)}">\n      <span class="kicker">{"Current committee" if cur else "Back issue"}</span>\n'
-                f'      <h2>{y}</h2>\n      <div class="people">\n{cards(members)}\n      </div>\n    </section>\n')
+        out += (f'    <section class="blk {colors[i % len(colors)]}" id="{tid(y)}">\n'
+                f'      <h2>{y}{" · current" if cur else ""}</h2>\n      <div class="people">\n{cards(members)}\n      </div>\n    </section>\n')
     out += '  </main>\n  <footer id="chrome-bottom"></footer>\n</div>\n<script src="site.js"></script>\n</body>\n</html>\n'
     return out
 
