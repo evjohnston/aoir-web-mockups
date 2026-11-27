@@ -19,6 +19,13 @@ CROPS = {
     "adrienne-massanari": (0.10, 0.0, 0.90),
     "crystal-abidin": (0.11, 0.01, 0.88),
     "jack-qiu": (0.0, 0.0, 1.0),
+    "jang-hyun-kim": (0.0, 0.0, 0.85),
+    "matt-williams": (0.25, 0.0, 0.75),
+    "radhika-gajjala": (0.29, 0.0, 0.75),
+    "sean-cubitt": (0.25, 0.06, 0.5),
+    "soraj-hongladarom": (0.38, 0.21, 0.42),
+    "sun-sun-lim": (0.43, 0.0, 0.5),
+    "wes-shrum": (0.22, 0.0, 0.6),
     "axel-bruns": (0.28, 0.0, 0.95),
 }
 
