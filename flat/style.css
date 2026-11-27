@@ -252,3 +252,11 @@ aside.win.sticky-note { background: #fff; }
 .due.feature { background: var(--hl); }
 aside.win, aside.win.sticky-note { border: 2px solid var(--ink); background: #fff; }
 .win-body.tight { padding: 0; }
+
+/* committee portraits */
+.people { display: grid; grid-template-columns: repeat(auto-fill, minmax(132px, 1fr)); gap: 20px 18px; }
+.person-card { margin: 0; }
+.person-card img { width: 100%; height: auto; aspect-ratio: 1; display: block; border: 0; background: transparent; }
+.person-card figcaption { margin-top: 8px; line-height: 1.3; }
+.person-card .role { display: block; font: 11px/1.3 var(--mono); text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
+.person-card .who { display: block; font-weight: 700; font-size: 15px; }

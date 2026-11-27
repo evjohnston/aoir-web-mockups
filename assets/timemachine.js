@@ -37,9 +37,10 @@
   var css =
     "#aoir-tm{position:fixed;right:14px;bottom:14px;z-index:2147483000;font:13px/1.3 -apple-system,system-ui,Segoe UI,Helvetica,Arial,sans-serif;" +
     "background:#111;color:#fff;border:2px solid #fff;outline:1px solid #111;padding:8px 10px;display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;max-width:calc(100vw - 28px);box-shadow:0 2px 10px rgba(0,0,0,.35)}" +
-    "#aoir-tm label{font-weight:600}#aoir-tm select{font:inherit;padding:3px 4px;border:1px solid #fff;background:#111;color:#fff}" +
+    "#aoir-tm label{display:inline;margin:0;padding:0;font:600 13px/1.3 -apple-system,system-ui,Segoe UI,Helvetica,Arial,sans-serif;color:#fff;text-transform:none;letter-spacing:0}" +
+    "#aoir-tm select{width:auto;max-width:100%;font:13px -apple-system,system-ui,Segoe UI,Helvetica,Arial,sans-serif;padding:3px 4px;border:1px solid #fff;border-radius:0;background:#111;color:#fff;box-shadow:none}" +
     "#aoir-tm a{color:#fff;text-decoration:underline}#aoir-tm a:hover{background:#fff;color:#111}" +
-    "#aoir-tm button{font:inherit;font-weight:600;background:#fff;color:#111;border:0;padding:3px 9px;cursor:pointer}" +
+    "#aoir-tm button{width:auto;box-shadow:none;border-radius:0;text-transform:none;letter-spacing:0;font:600 13px -apple-system,system-ui,Segoe UI,Helvetica,Arial,sans-serif;background:#fff;color:#111;border:0;padding:3px 9px;cursor:pointer}" +
     "#aoir-tm select:focus-visible,#aoir-tm button:focus-visible,#aoir-tm a:focus-visible{outline:2px solid #ffd400;outline-offset:2px}";
   var st = document.createElement("style"); st.textContent = css; document.head.appendChild(st);
 

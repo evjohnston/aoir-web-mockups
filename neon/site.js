@@ -5,7 +5,7 @@
   var NAV = [
     ["about", "about.html", "About"], ["news", "news.html", "News"], ["conference", "conference.html", "Conferences"],
     ["publications", "publications.html", "Publications"], ["membership", "membership.html", "Membership"],
-    ["awards", "awards.html", "Awards"], ["ethics", "ethics.html", "Ethics"], ["archive", "#", "AoIRchive"]
+    ["awards", "awards.html", "Awards"], ["ethics", "ethics.html", "Ethics"], ["archive", "aoirchive-committees.html", "AoIRchive"]
   ];
   var COLORS = [["White", "#ffffff"], ["Black", "#000000"], ["Ink blue", "#101a6b"]];
 
