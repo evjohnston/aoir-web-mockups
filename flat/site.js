@@ -27,3 +27,10 @@
       '<div><a href="#">code of conduct</a> · <a href="#">privacy</a> · <a href="#">bylaws</a> · <a href="#">contact</a> · <a href="#">aoir.social</a> · last updated 2026-11-26</div>';
   }
 })();
+
+/* time machine switcher ("Take me back to ____") */
+(function () {
+  var s = document.createElement("script");
+  s.src = "../assets/timemachine.js";
+  document.body.appendChild(s);
+})();

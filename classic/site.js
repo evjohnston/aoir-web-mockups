@@ -146,3 +146,10 @@
     if (drag) { drag.w.classList.remove("dragging"); drag = null; }
   });
 })();
+
+/* time machine switcher ("Take me back to ____") */
+(function () {
+  var s = document.createElement("script");
+  s.src = "../assets/timemachine.js";
+  document.body.appendChild(s);
+})();

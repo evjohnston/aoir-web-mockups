@@ -76,3 +76,10 @@
     if (b) setBg(b.getAttribute("data-c"));
   });
 })();
+
+/* time machine switcher ("Take me back to ____") */
+(function () {
+  var s = document.createElement("script");
+  s.src = "../assets/timemachine.js";
+  document.body.appendChild(s);
+})();
