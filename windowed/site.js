@@ -2,12 +2,7 @@
 (function () {
   var page = document.body.getAttribute("data-page") || "home";
 
-  var LOGO =
-    '<svg viewBox="0 0 132 56" role="img" aria-label="AoIR">' +
-    '<text x="0" y="48" font-family="Inter, Arial Black, sans-serif" font-weight="900" font-size="56" letter-spacing="-3">A</text>' +
-    '<circle cx="48" cy="31" r="13"/>' +
-    '<text x="64" y="48" font-family="Inter, Arial Black, sans-serif" font-weight="900" font-size="56" letter-spacing="-2">IR</text>' +
-    "</svg>";
+  var LOGO = '<img src="../assets/aoir-mark.svg" alt="AoIR">';
 
   var NAV = [
     ["home", "index.html", "/home"],

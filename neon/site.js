@@ -1,12 +1,7 @@
 /* Shared chrome for the Neon mockup: masthead, nav row, footer, page-color picker. */
 (function () {
   var page = document.body.getAttribute("data-page") || "home";
-  var LOGO =
-    '<svg viewBox="0 0 132 56" role="img" aria-label="AoIR">' +
-    '<text x="0" y="48" font-family="Arial Black, sans-serif" font-weight="900" font-size="56" letter-spacing="-3">A</text>' +
-    '<circle cx="48" cy="31" r="13"/>' +
-    '<text x="64" y="48" font-family="Arial Black, sans-serif" font-weight="900" font-size="56" letter-spacing="-2">IR</text>' +
-    "</svg>";
+  var LOGO = '<img src="../assets/aoir-mark.svg" alt="AoIR">';
   var NAV = [
     ["about", "about.html", "About"], ["news", "news.html", "News"], ["conference", "conference.html", "Conferences"],
     ["publications", "publications.html", "Publications"], ["membership", "membership.html", "Membership"],

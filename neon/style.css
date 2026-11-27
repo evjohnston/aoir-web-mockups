@@ -59,7 +59,7 @@ p { margin: 0 0 .8em; }
 .mast .logo-blk { display: grid; place-items: center; padding: 16px; }
 .mast .logo-blk a { background: var(--white); padding: 8px 10px; display: block; border: 2px solid var(--ink); }
 .mast .logo-blk a:hover { background: var(--white); }
-.mast .logo-blk svg { height: 44px; width: auto; display: block; }
+.mast .logo-blk img { height: 44px; width: auto; display: block; }
 .mast .title { padding: 16px 22px; }
 .mast .title .name { font: 400 clamp(32px, 5vw, 58px)/.92 var(--head); text-transform: uppercase; display: block; color: var(--ink); text-decoration: none; }
 .mast .title .name:hover { background: none; }
