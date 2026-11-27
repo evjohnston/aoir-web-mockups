@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en"><!-- Rebuilt in the style of aoir.org 2014–2021 ("Responsive" WordPress theme, 2015 capture), with current content. -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AoIR | Association of Internet Researchers</title>
+<style>
+  /* after Responsive by CyberChimps (GPL) */
+  * { box-sizing: border-box; }
+  body { margin:0; background:#efefef; color:#555; font:14px/1.5 Arial, Helvetica, sans-serif; }
+  a { color:#0066cc; text-decoration:none; } a:hover { color:#444; }
+  #container { max-width:960px; margin:0 auto; padding:0 0 30px; }
+  #header { display:flex; justify-content:space-between; align-items:flex-start; padding:20px 0 10px 12px; }
+  #logo img { display:block; width:310px; height:auto; }
+  .top-menu { text-align:right; font-size:11px; }
+  .top-menu a { color:#333; padding:0 8px; border-left:1px solid #ccc; }
+  .top-menu a:first-child { border-left:0; }
+  .top-menu form { margin-top:16px; display:flex; gap:6px; justify-content:flex-end; }
+  .top-menu input[type=text] { width:164px; font:13px Arial, sans-serif; padding:5px 8px; border:1px solid #ccc; border-radius:2px; box-shadow:inset 0 1px 1px rgba(0,0,0,.08); color:#777; }
+  .top-menu input[type=submit] { font:bold 13px Arial, sans-serif; color:#333; padding:5px 10px; border:1px solid #ccc; border-radius:2px; background:linear-gradient(#fff,#ededed); }
+  .main-nav { background:linear-gradient(#585858, #3d3d3d); display:flex; flex-wrap:wrap; }
+  .main-nav a { color:#fff; font:bold 13px/45px Arial, sans-serif; padding:0 12px; border-right:1px solid #696969; text-shadow:0 -1px 0 #000; }
+  .main-nav a:hover { background:#333; color:#fff; }
+  #featured { background:#fff; border:1px solid #d6d6d6; border-radius:4px; margin:20px 0; padding:40px 30px; display:grid; grid-template-columns:1fr 1fr; gap:30px; align-items:center; }
+  .featured-title { text-align:center; font-size:48px; font-weight:bold; line-height:1.2; margin:0; }
+  .featured-subtitle { text-align:center; font-size:28px; font-weight:bold; line-height:1.3; margin:20px 0; }
+  #featured p { text-align:center; font-size:17px; line-height:1.6; margin:0 0 30px; }
+  .call-to-action { text-align:center; }
+  .button { display:inline-block; background:linear-gradient(#4b9be7, #217bd2); border:1px solid #1a64ab; border-radius:3px; color:#fff; font:bold 22px/1 Arial, sans-serif; padding:14px 36px; text-shadow:0 -1px 0 rgba(0,0,0,.3); box-shadow:inset 0 1px 0 rgba(255,255,255,.3); }
+  .button:hover { color:#fff; filter:brightness(1.07); }
+  .photo { position:relative; aspect-ratio:3/2; background:linear-gradient(#8fd0f2 0%, #c9ecfb 52%, #2f88b8 53%, #1f6f9c 75%, #e3cf9f 76%, #d9c08b 100%); }
+  .photo span { position:absolute; left:8px; bottom:6px; font-size:11px; color:#333; background:rgba(255,255,255,.8); padding:1px 5px; }
+  #widgets { display:grid; grid-template-columns:repeat(3, 1fr); gap:14px; }
+  .widget-wrapper { background:#fff; border:1px solid #d6d6d6; border-radius:4px; padding:16px 18px 20px; font-size:13px; line-height:1.65; }
+  .widget-title h3 { margin:0 0 12px; font-size:22px; line-height:1.2; color:#555; }
+  .widget-wrapper p { margin:0 0 16px; }
+  #footer { margin-top:40px; font-size:11px; }
+  .footer-row { display:flex; justify-content:space-between; align-items:center; padding:10px 0; }
+  .footer-menu a { color:#333; padding:0 8px; border-left:1px solid #ccc; } .footer-menu a:first-child { padding-left:0; border-left:0; }
+  .social a { display:inline-block; width:20px; height:20px; background:#aaa; border-radius:3px; color:#efefef; font:bold 13px/20px Arial; text-align:center; margin-left:4px; }
+  .copyright, .powered { color:#333; } .powered a { color:#333; }
+  @media (max-width:760px) {
+    #container { padding:0 12px 30px; }
+    #header { flex-direction:column; gap:12px; padding-left:0; }
+    .top-menu { text-align:left; } .top-menu form { justify-content:flex-start; }
+    #logo img { width:240px; }
+    #featured { grid-template-columns:1fr; padding:24px 16px; }
+    .featured-title { font-size:36px; }
+    #widgets { grid-template-columns:1fr; }
+    .footer-row { flex-wrap:wrap; gap:8px; }
+  }
+</style>
+</head>
+<body class="home page">
+<div id="container" class="hfeed">
+  <div id="header">
+    <div id="logo"><a data-to="index" href="#"><img src="header.png" width="335" height="84" alt="AoIR"></a></div>
+    <div class="top-menu">
+      <a data-to="about" href="#">Mailing Lists</a><a data-to="membership" href="#">Join AoIR</a><a data-to="membership" href="#">Donate</a><a data-to="about" href="#">Contact Us</a>
+      <form onsubmit="return false"><label for="s" style="position:absolute;left:-9999px">Search</label><input type="text" id="s" placeholder="search here &hellip;"><input type="submit" value="Go"></form>
+    </div>
+  </div>
+  <nav class="main-nav" aria-label="Main">
+    <a data-to="index" href="#">Home</a><a data-to="about" href="#">About</a><a data-to="news" href="#">News</a><a data-to="conference" href="#">Conferences</a><a data-to="publications" href="#">Publications</a><a data-to="membership" href="#">Community</a><a data-to="ethics" href="#">Ethics</a>
+  </nav>
+
+  <div id="wrapper">
+    <div id="featured" role="main">
+      <div>
+        <h1 class="featured-title">AoIR2027</h1>
+        <h2 class="featured-subtitle">Rimini, Italy</h2>
+        <p>The 28th annual meeting of the Association of Internet Researchers will be held in Rimini, Italy, 17-20 November, 2027.</p>
+        <div class="call-to-action"><a class="button" data-to="conference" href="#">Click for Info</a></div>
+      </div>
+      <div class="photo" role="img" aria-label="Placeholder for an AoIR2027 Rimini photo"><span>Photo: AoIR2027, Rimini (placeholder)</span></div>
+    </div>
+
+    <div id="widgets">
+      <div class="widget-wrapper">
+        <div class="widget-title"><h3>Internet Research</h3></div>
+        <p>The Association of Internet Researchers is a member-based, academic association dedicated to the promotion of critical and scholarly Internet research independent from traditional disciplines and existing across academic borders..</p>
+        <p>If you're interested in keeping up with the AoIR community, please consider joining our <a data-to="about" href="#">mailing lists!</a></p>
+      </div>
+      <div class="widget-wrapper">
+        <div class="widget-title"><h3>Ethics Guides</h3></div>
+        <p>AoIR has an ongoing commitment to ensuring that research on and about the Internet is conducted in an ethical and professional manner by offering ethics guidance to researchers, students, and others in the domain of Internet research.</p>
+        <p>For more information (including the most recent report from the AoIR Ethics Working Group) <a data-to="ethics" href="#">click here.</a></p>
+      </div>
+      <div class="widget-wrapper">
+        <div class="widget-title"><h3>Support AoIR</h3></div>
+        <p>AoIR brings together a vibrant community of researchers, provides access to an archive of past conference papers and discounted publications, and supports both students and scholars in the form of travel grants and awards.</p>
+        <p>To further support the Association's work, please consider <a data-to="membership" href="#">joining</a> or <a data-to="membership" href="#">donating</a> to the AoIR community!</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer">
+    <div class="footer-row">
+      <div class="footer-menu"><a data-to="about" href="#">About AoIR</a><a data-to="news" href="#">News</a><a data-to="about" href="#">Help us improve this website!</a></div>
+      <div class="social"><a data-to="about" href="#" aria-label="Twitter">t</a><a data-to="about" href="#" aria-label="Facebook">f</a></div>
+    </div>
+    <div class="footer-row">
+      <div class="copyright">&copy; 2026 AoIR</div>
+      <div><a href="#top" style="color:#333">&uarr;</a></div>
+      <div class="powered"><a data-to="about" href="#">Responsive Theme</a> powered by <a data-to="about" href="#">WordPress</a></div>
+    </div>
+  </div>
+</div>
+<script src="../../assets/timemachine.js"></script>
+</body>
+</html>

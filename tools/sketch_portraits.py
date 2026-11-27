@@ -16,10 +16,10 @@ PAPER = 248  # near-white paper tone
 # square crop boxes (x0, y0, side) as fractions of image width/height for off-centre photos
 CROPS = {
     "annette-markham": (0.28, 0.17, 0.62),   # side as fraction of height
-    "adrienne-massanari": (0.30, 0.13, 0.56),
+    "adrienne-massanari": (0.10, 0.0, 0.90),
     "crystal-abidin": (0.11, 0.01, 0.88),
     "jack-qiu": (0.0, 0.0, 1.0),
-    "axel-bruns": (0.30, 0.18, 0.70),
+    "axel-bruns": (0.28, 0.0, 0.95),
 }
 
 
@@ -56,7 +56,7 @@ def vignette(n):
     return np.clip((r - 0.72) / 0.28, 0, 1)  # 0 centre -> 1 edge
 
 
-def sketch(slug):
+def sketch_filter_old(slug):
     im = Image.open(os.path.join(SRC, slug + ".img"))
     if im.mode in ("RGBA", "LA", "P"):
         bg = Image.new("RGB", im.size, "white")
@@ -89,6 +89,16 @@ def sketch(slug):
     out = out * (1 - v) + 1.0 * v                 # fade edges to paper
     out = np.clip(out * (PAPER / 255.0) + (1 - PAPER / 255.0) * v * 0, 0, 1)
     Image.fromarray((out * 255).astype(np.uint8), "L").save(os.path.join(OUT, slug + ".jpg"), quality=86)
+
+
+def sketch(slug):
+    """Pen-and-ink drawing of the published headshot (see tools/engrave.py)."""
+    from engrave import pen
+    im = Image.open(os.path.join(SRC, slug + ".img"))
+    if im.mode in ("RGBA", "LA", "P"):
+        im = im.convert("RGBA"); bg = Image.new("RGB", im.size, "white"); bg.paste(im, mask=im.split()[-1]); im = bg
+    im = crop_square(im.convert("RGB"), slug).convert("L")
+    pen(im, size=SIZE).save(os.path.join(OUT, slug + ".jpg"), quality=88)
 
 
 def initials_card(slug, name):
