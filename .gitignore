@@ -2,3 +2,8 @@
 .impeccable/
 _wayback/
 _photos/
+
+# Archived mockups: keep only screenshots and logos
+archived-mockups/.claude/
+archived-mockups/WordPress.*.xml
+archived-mockups/skills-lock.json
