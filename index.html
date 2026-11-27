@@ -3,96 +3,31 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AoIR Web Mockups</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=JetBrains+Mono:wght@400;800&display=swap" rel="stylesheet">
+<title>AoIR web mockups</title>
 <style>
-  :root { --ink:#141414; --paper:#fffdf3; --hl:#fff04d; }
-  * { box-sizing: border-box; }
-  body { margin:0; background:#ececec; color:var(--ink); font:17px/1.55 Inter, system-ui, sans-serif; }
-  .wrap { max-width: 1040px; margin: 0 auto; padding: 48px 20px 64px; }
-  h1 { font: 800 clamp(30px,5vw,48px)/1.1 "JetBrains Mono", monospace; margin: 0 0 10px; }
-  .lede { max-width: 42em; margin: 0 0 36px; }
-  .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); gap: 28px; }
-  .card { border:2px solid var(--ink); box-shadow:6px 6px 0 var(--ink); background:var(--paper); display:flex; flex-direction:column; }
-  .card .swatch { height: 150px; border-bottom:2px solid var(--ink); display:grid; place-items:center; }
-  .card .swatch span { background:var(--paper); border:2px solid var(--ink); box-shadow:4px 4px 0 var(--ink); padding:8px 14px; font:800 18px "JetBrains Mono", monospace; }
-  .card .body { padding: 20px 22px 22px; flex:1; display:flex; flex-direction:column; }
-  .card h2 { font: 800 22px/1.2 "JetBrains Mono", monospace; margin:0 0 8px; }
-  .card p { margin:0 0 12px; font-size:15px; }
-  .card ul { margin:0 0 16px; padding-left: 1.1em; font-size:15px; }
-  .btn { display:inline-block; margin-top:auto; align-self:flex-start; background:var(--ink); color:var(--paper); font:800 14px "JetBrains Mono", monospace; padding:12px 16px; text-decoration:none; border:2px solid var(--ink); }
-  .btn:hover { background:var(--hl); color:var(--ink); }
-  .pages { font: 13px/1.8 "JetBrains Mono", monospace; margin: 0 0 16px; }
-  .pages a { color: var(--ink); margin-right: 8px; }
-  .notes { margin-top: 44px; font-size: 15px; max-width: 46em; }
-  .notes h3 { font: 800 16px "JetBrains Mono", monospace; }
+  body { margin: 0; background: #fff; color: #111; font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+  main { max-width: 560px; margin: 0 auto; padding: 48px 16px; }
+  h1 { font-size: 22px; margin: 0 0 8px; }
+  p { margin: 0 0 16px; }
+  .buttons { display: flex; flex-wrap: wrap; gap: 10px; margin: 24px 0; }
+  .buttons a { display: inline-block; padding: 10px 18px; border: 1px solid #111; border-radius: 6px; color: #111; text-decoration: none; font-weight: 600; }
+  .buttons a:hover { background: #111; color: #fff; }
+  .small { font-size: 14px; color: #555; }
+  a { color: #111; }
 </style>
 </head>
 <body>
-<div class="wrap">
+<main>
   <h1>AoIR web mockups (draft)</h1>
-  <p class="lede">Three early ideas for a new aoir.org. They're still rough: some layouts have UI issues, and some details are placeholders. They share the same content and pages, so you can compare them side by side. Feedback is very welcome.</p>
+  <p>Three rough options for a new aoir.org, with the same content in each. Some things are still broken or unfinished.</p>
 
-  <div class="grid">
-    <article class="card">
-      <div class="swatch" style="background:#2f46e6"><span>Windowed</span></div>
-      <div class="body">
-        <h2>1 · Windowed</h2>
-        <p>Based on the "Join the people who study the internet" mockup. Each section sits in a cream window on a solid color background.</p>
-        <ul>
-          <li>Each window has a small colored title bar</li>
-          <li>You can change the background color at the bottom of any page</li>
-        </ul>
-        <p class="pages"><a href="windowed/index.html">home</a><a href="windowed/about.html">about</a><a href="windowed/news.html">news</a><a href="windowed/conference.html">conference</a><a href="windowed/publications.html">publications</a><a href="windowed/membership.html">membership</a><a href="windowed/awards.html">awards</a><a href="windowed/ethics.html">ethics</a><a href="windowed/aoirchive-committees.html">past committees</a><a href="windowed/login.html">login</a></p>
-        <a class="btn" href="windowed/index.html">Open Windowed →</a>
-      </div>
-    </article>
-
-    <article class="card">
-      <div class="swatch" style="background:#fffdf3"><span>Flat</span></div>
-      <div class="body">
-        <h2>2 · Flat</h2>
-        <p>The original version of that mockup: one cream column, no windows, and small code-style labels above each section.</p>
-        <ul>
-          <li>Same pages and text as Windowed, so you can switch between them</li>
-          <li>No background color options</li>
-        </ul>
-        <p class="pages"><a href="flat/index.html">home</a><a href="flat/about.html">about</a><a href="flat/news.html">news</a><a href="flat/conference.html">conference</a><a href="flat/publications.html">publications</a><a href="flat/membership.html">membership</a><a href="flat/awards.html">awards</a><a href="flat/ethics.html">ethics</a><a href="flat/aoirchive-committees.html">past committees</a><a href="flat/login.html">login</a></p>
-        <a class="btn" href="flat/index.html">Open Flat →</a>
-      </div>
-    </article>
-
-    <article class="card">
-      <div class="swatch" style="background:#fff"><span style="background:#6dff7a">Neon</span></div>
-      <div class="body">
-        <h2>3 · Neon</h2>
-        <p>Based on the e-zine mockup: bright color blocks and big all-caps headlines.</p>
-        <ul>
-          <li>White background by default; black and dark blue are options at the bottom of any page</li>
-        </ul>
-        <p class="pages"><a href="neon/index.html">home</a><a href="neon/about.html">about</a><a href="neon/news.html">news</a><a href="neon/conference.html">conference</a><a href="neon/publications.html">publications</a><a href="neon/membership.html">membership</a><a href="neon/awards.html">awards</a><a href="neon/ethics.html">ethics</a><a href="neon/aoirchive-committees.html">past committees</a><a href="neon/login.html">login</a></p>
-        <a class="btn" href="neon/index.html">Open Neon →</a>
-      </div>
-    </article>
+  <div class="buttons">
+    <a href="windowed/index.html">Windowed</a>
+    <a href="flat/index.html">Flat</a>
+    <a href="neon/index.html">Neon</a>
   </div>
 
-  <div class="notes">
-    <h3>Take me back (experiment)</h3>
-    <p>Every page has a "Take me back" button in the bottom right. It tries to show the current content in one of aoir.org's eight past designs, from 1999 to 2024. Only the homepages exist for now, and they're close but not exact copies. <a href="windowed/index.html#tm=open">Try it</a>.</p>
-  </div>
-
-  <div class="notes">
-    <h3>Also made</h3>
-    <p><a href="classic/index.html">Classic</a>: a black-and-white version styled like an old Mac. It has the same pages.</p>
-  </div>
-
-  <div class="notes">
-    <h3>Known gaps</h3>
-    <p>The text comes from the current aoir.org, but some of it is shortened or out of date. Many links go nowhere yet, and forms don't send anything. Some pages look off on phones. A few past committee members still have initials instead of photos.</p>
-    <p>To share a page with a particular background color, add <code>?bg=</code> and a color code to the link, for example <code>windowed/index.html?bg=ff5a36</code>. Your color choice is only saved in your own browser.</p>
-  </div>
-</div>
+  <p class="small">Also try the "Take me back" button in the bottom right of any page, which shows the same content in old aoir.org designs. There's also a <a href="classic/index.html">fourth, Mac-style version</a>.</p>
+</main>
 </body>
 </html>
